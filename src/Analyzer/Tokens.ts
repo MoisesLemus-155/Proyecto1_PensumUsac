@@ -31,14 +31,9 @@ class Token {
     getLexeme(): string {
         return this.lexeme;
     }
-    
     getType(): Type {
         return this.typeToken;
     }
-
-    
 }
-
-
 
 export { Type, Token };

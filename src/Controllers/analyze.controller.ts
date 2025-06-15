@@ -3,7 +3,7 @@ import { LexicalAnalyze } from '../Analyzer/LexicalAnalyzer';
 import { parsePensum } from '../Analyzer/ProcessToken';
 
 export const analyze = (req: Request, res: Response) => {
-    const data = req.body;
+    const data = req.body.input;
     const lexicalAnalyzer = new LexicalAnalyze();
     const tokenList = lexicalAnalyzer.scanner(data);
     const errorList = lexicalAnalyzer.getErrorList();
